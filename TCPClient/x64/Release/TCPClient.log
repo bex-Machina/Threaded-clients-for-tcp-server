@@ -1,10 +1,10 @@
 ﻿  main.cpp
-D:\2020_21 computer science\Concurrent And Parallel Systems\Task 1 Final Sub\Libraries v3.0\TCPClient\TCPClient\helperFunc.h(67,43): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\2020_21 computer science\Concurrent And Parallel Systems\Task 1 Final Sub\Libraries v3.0\TCPClient\TCPClient\helperFunc.h(85,43): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-D:\2020_21 computer science\Concurrent And Parallel Systems\Task 1 Final Sub\Libraries v3.0\TCPClient\TCPClient\helperFunc.h(95,52): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\2020_21 computer science\Concurrent And Parallel Systems\Task 1 Final Sub\Libraries v3.0\Final Sub yes\Libraries v4.0\TCPClient\TCPClient\helperFunc.h(85,44): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\2020_21 computer science\Concurrent And Parallel Systems\Task 1 Final Sub\Libraries v3.0\Final Sub yes\Libraries v4.0\TCPClient\TCPClient\helperFunc.h(94,44): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\2020_21 computer science\Concurrent And Parallel Systems\Task 1 Final Sub\Libraries v3.0\Final Sub yes\Libraries v4.0\TCPClient\TCPClient\helperFunc.h(106,52): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   Generating code
   3 of 1127 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    2 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  TCPClient.vcxproj -> D:\2020_21 computer science\Concurrent And Parallel Systems\Task 1 Final Sub\Libraries v3.0\TCPClient\x64\Release\TCPClient.exe
+  TCPClient.vcxproj -> D:\2020_21 computer science\Concurrent And Parallel Systems\Task 1 Final Sub\Libraries v3.0\Final Sub yes\Libraries v4.0\TCPClient\x64\Release\TCPClient.exe

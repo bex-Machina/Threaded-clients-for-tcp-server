@@ -10,7 +10,7 @@ std::vector<threadInfo> PostPool;
 std::vector<threadInfo> ReadPool;
 
 
-int getTotalPoster() {
+inline int getTotalPoster() {
 	int total = 0;
 	for (int i = 0; i < PostPool.size(); i++)
 	{
@@ -25,7 +25,7 @@ int getTotalPoster() {
 }
 
 
-std::string random_post(size_t length)
+inline std::string random_post(size_t length)
 {
 	auto randchar = []() -> char
 	{
@@ -45,7 +45,7 @@ std::string random_post(size_t length)
 	return request;
 }
 
-std::string random_read(size_t length)
+inline std::string random_read(size_t length)
 {
 	auto randchar = []() -> char
 	{
@@ -63,11 +63,9 @@ std::string random_read(size_t length)
 	return str;
 }
 
-int Avposter() {
-	return getTotalPoster() / PostPool.size();
-}
 
-int getTotalReader()
+
+inline int getTotalReader()
 {
 	int total = 0;
 	for (int i = 0; i < ReadPool.size(); i++)
@@ -80,23 +78,40 @@ int getTotalReader()
 	return total;
 }
 
-int Avreader()
-{
-	return getTotalReader() / ReadPool.size();
+inline int Avposter() {
+
+	if (PostPool.size() != 0)
+	{
+		return getTotalReader() / PostPool.size();
+	}
+	return 0;
 }
 
-int getTotal()
+inline int Avreader()
+{
+	if (ReadPool.size() != 0)
+	{
+		return getTotalReader() / ReadPool.size();
+	}
+	return 0;
+}
+
+inline int getTotal()
 {
 	return getTotalPoster() + getTotalReader();
 }
 
-int AvPthread()
+inline int AvPthread()
 {
 	int Numthreads = ReadPool.size() + PostPool.size();
-	return getTotal() / Numthreads;
+	if (Numthreads != 0)
+	{
+		return getTotal() / Numthreads;
+	}
+	return 0;
 }
 
-int AvPthreadPsecond(int time)
+inline int AvPthreadPsecond(int time)
 {
 	return AvPthread() / time;
 }

@@ -149,6 +149,11 @@ threadInfo PostClient(char** argv)
 			count = 0;
 		}	
 	} while (Exit == false);
+
+	if (count)
+	{
+		temp.requestCount.push_back(count);
+	}
 	
 	client.CloseConnection();
 	return temp;
@@ -177,6 +182,11 @@ threadInfo RequestClient(char** argv)
 			count = 0;
 		}
 	} while (Exit == false);
+
+	if (count)
+	{
+		temp.requestCount.push_back(count);
+	}
 
 	client.CloseConnection();
 	return temp;
